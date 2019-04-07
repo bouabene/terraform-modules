@@ -20,7 +20,7 @@ data "terraform_remote_state" "vpc" {
 }
 
 resource "aws_db_subnet_group" "database" {
-  name       = "lamp"
+  name       = "${var.name}"
   subnet_ids = ["${data.terraform_remote_state.vpc.private_subnet_ids}"]
 
   tags {
