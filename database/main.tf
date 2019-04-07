@@ -33,7 +33,7 @@ resource "aws_db_instance" "database" {
   allocated_storage    = 5
   storage_type         = "gp2"
   engine               = "mysql"
-  engine_version       = "5.7.21"
+  engine_version       = "5.6.34"
   instance_class       = "db.t2.micro"
   name                 = "lamp"
   username             = "lamp"
