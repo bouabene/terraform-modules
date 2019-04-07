@@ -18,5 +18,8 @@ variable "profile" {
 variable "region" {
   description = "The region to deploy to"
 }
+variable "elb_name" {
+  description = "The name of elb"
+}
 
 variable "tfstate_bucket" {}

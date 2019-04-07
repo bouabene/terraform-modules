@@ -94,7 +94,7 @@ resource "aws_launch_configuration" "webserver" {
 }
 
 resource "aws_elb" "webserver" {
-  name = "webserver-elb"
+  name =  "${var.elb_name}"
   internal = false
   subnets = ["${data.terraform_remote_state.vpc.public_subnet_ids}"]
   security_groups = ["${aws_security_group.elb.id}"]
