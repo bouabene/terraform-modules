@@ -40,7 +40,7 @@ resource "aws_db_instance" "database" {
   password             = "lamp1234"
   db_subnet_group_name = "${aws_db_subnet_group.database.name}"
   parameter_group_name = "default.mysql5.6"
-  availability_zone = "us-west-2a"
+  availability_zone = "eu-west-3a"
   vpc_security_group_ids = ["${aws_security_group.database.id}"]
   skip_final_snapshot = true
 
