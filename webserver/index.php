@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Terraform QA project: LAMP Stack in AWS</title>
+<title>Terraform TSL project: LAMP Stack in AWS</title>
 </head>
 
 <body style="background-color: gray">
