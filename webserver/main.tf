@@ -42,7 +42,7 @@ data "template_file" "index_php" {
 
 data "template_cloudinit_config" "readmodel" {
   gzip          = true
-  base64_encode = false
+  base64_encode = true 
 
   part {
     content_type = "text/part-handler"
