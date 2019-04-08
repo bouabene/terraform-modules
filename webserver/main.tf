@@ -190,7 +190,7 @@ resource "aws_security_group" "elb" {
   }
 }
 
-resource "aws_route53_record" "www_${var.environment}" {
+resource "aws_route53_record" "www" {
   zone_id = "Z1PLTHJZ4UMTHI"
   name = "lamp.${var.environment}.infra-tsl.com"
   type = "CNAME"
