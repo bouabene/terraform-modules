@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>Terraform TSL project: LAMP Stack in AWS</title>
+<title>Terraform TSL - DEMO project: LAMP Stack in AWS</title>
 </head>
 
 <body style="background-color: gray">
 <div id="container">
 <div style="margin:0 auto; text-align:center; width:1200px; height: 650px; background: white; border: 2px solid black">
 <h1 style="font-size: 4em">Terraform example project</h1>
-<h2 style="font-size: 2em">LAMP Stack for TSL in AWS</h2>
+<h2 style="font-size: 2em">LAMP Stack for TSL - DEMO in AWS</h2>
 <?php
 
 /*
