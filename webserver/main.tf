@@ -191,7 +191,7 @@ resource "aws_security_group" "elb" {
 }
 
 resource "aws_route53_record" "www" {
-  zone_id = "Z1PLTHJZ4UMTHI"
+  zone_id = " Z3GFBPS6VKX7FP"
   name = "lamp.${var.environment}.infra-tsl.com"
   type = "CNAME"
   ttl = "300"
