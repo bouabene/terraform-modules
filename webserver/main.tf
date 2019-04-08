@@ -194,6 +194,6 @@ resource "aws_route53_record" "www" {
   zone_id = "Z3GFBPS6VKX7FP"
   name = "lamp.${var.environment}.infra-tsl.com"
   type = "CNAME"
-  ttl = "300"
+  ttl = "10"
   records = ["${aws_elb.webserver.dns_name}"]
 }
