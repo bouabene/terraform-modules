@@ -190,17 +190,6 @@ resource "aws_security_group" "elb" {
   }
 }
 
-resource "aws_route53_record" "foo" {
-  zone_id = " Z2UUDY3YII2SBJ"
-  name    = "lamp-${var.environment}.infra-tls.com"
-  type    = "A"
-
-  alias {
-    name                   = "${aws_elb.foobar-elb.dns_name}"
-    zone_id                = "${aws_elb.foobar-elb.zone_id}"
-    evaluate_target_health = true
-  }
-}
 resource "aws_route53_record" "lamp" {
   zone_id = "Z1PLTHJZ4UMTHI"
   name = "lamp.${var.environment}.infra-tsl.com"
