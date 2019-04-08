@@ -201,10 +201,10 @@ resource "aws_route53_record" "foo" {
     evaluate_target_health = true
   }
 }
-#resource "aws_route53_record" "lamp" {
-#  zone_id = "Z1PLTHJZ4UMTHI"
-#  name = "lamp.${var.environment}.infra-tsl.com"
-#  type = "CNAME"
-#  ttl = "300"
-#  records = "${aws_elb.webserver.dns_name}"
-#}
+resource "aws_route53_record" "lamp" {
+  zone_id = "Z1PLTHJZ4UMTHI"
+  name = "lamp.${var.environment}.infra-tsl.com"
+  type = "CNAME"
+  ttl = "10"
+  records = "${aws_elb.webserver.dns_name}"
+}
